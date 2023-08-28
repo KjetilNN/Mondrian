@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container{
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      border: solid black 20px;
+      padding: 5px;
+      
+      height: 1000px;
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+
+    .box{
+      background-color: F0F1EC;
+      
+    }
+
+    /* start individual boxes */
+    .r1{
+      grid-area: 1 / 1 / 5 / 3;
+      background-color: #e72F24;
+      border: solid black 9px;
+    }
+
+    .w1{
+      grid-column-start: 3;
+      grid-column-end: 9;
+      background-color: #F0F1EC;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      border: 12px black solid;
+
+    }
+
+    #y1{
+      grid-column-start: 7;
+      grid-column-end: 9;
+      grid-row-start: 4;
+      grid-row-end: 7;
+      background-color: #F9D01E;
+      border: 9px black solid;
+    }
+
+    #b1{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start:6;
+      grid-row-end: 9;
+      background-color: #004592;
+      border: 9px black;
+      border-style: dashed;
+    }
+
+    /* borders */
+    .topborder{
+      border-top: 9px solid black;
+    }
+    .leftborder{
+      border-left: 9px solid black;
+    }
+    .rightborder{
+      border-right: 9px solid black;
+    }
+    .bottomborder{
+      border-bottom: solid 9px black;
+    }
+
+        
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="box r1"></div>
+    <div class="box w1"></div>
+    <div class="box "></div>
+    <div class="box "></div>
+    <div class="box "></div>
+    <div class="box "></div>
+    <div class="box" id="y1"></div>
+    <div class="box"></div>
+    <div class="box rightborder"></div>
+    <div class="box "></div>
+    <div class="box"></div>
+    <div class="box "></div>
+    <div class="box "></div>
+    <div class="box topborder"></div>
+    <div class="box"id="b1"></div>
+    <div class="box topborder"></div>
+    <div class="box topborder"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box leftborder"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box "></div>
+    <div class="box leftborder topborder" style="background-color: #004592;"></div>
+    <div class="box topborder" style="background-color: #004592;"></div>
+    </div>
+
+
+  <h1>My Mondrian Project</h1>
+</body>
+
+</html>
